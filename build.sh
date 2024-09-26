@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build -t jemacchi/wetty-geoserver-shell:1.0 .
+docker build -t jemacchi/wetty-geoserver-shell:1.1 .

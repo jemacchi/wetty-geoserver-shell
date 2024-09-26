@@ -1,7 +1,7 @@
 # Download this project:
 # https://github.com/jemacchi/geoserver-shell
 # and build next base docker image running command  ./build.sh
-FROM jemacchi/geoserver-shell:0.4.1-SNAPSHOT as builder
+FROM jemacchi/geoserver-shell:0.4.2-SNAPSHOT as builder
 #
 # NODE INSTALLATION and WETTY BUILD
 # Based in https://github.com/svenihoney/docker-wetty-alpine
@@ -15,7 +15,7 @@ RUN git clone https://github.com/butlerx/wetty --branch v1.3.0 /app && \
     yarn install --production --ignore-scripts --prefer-offline
 
 
-FROM jemacchi/geoserver-shell:0.4.1-SNAPSHOT
+FROM jemacchi/geoserver-shell:0.4.2-SNAPSHOT
 LABEL maintainer="jose.macchi@gmail.com"
 
 #
